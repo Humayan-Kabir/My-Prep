@@ -1,0 +1,12 @@
+1) full binary tree
+	def: every node has 2 or 0 nodes
+2) complete binary tree 
+	def: all the levels are completely filled except possibly last level and last level is filled left to right
+3) perfect binary tree
+	def : number of nodes in level l = 2^p  l = {0, 1, .....}
+4) balaced binary tree 
+	def : |height of left subtree - height of right subtree | <= 1 recursively maxheight = Log(N) proof it
+5) degenerate or pathological tree 
+	def : just chain like linked list
+
+
