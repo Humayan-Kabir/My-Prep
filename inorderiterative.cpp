@@ -12,14 +12,15 @@ void inorder(node *root) {
     stack<node *> st;
     node *cur = root;
     while(cur != NULL || !st.empty()) {
-        while(cur != NULL) {
+        if(cur != NULL) {
             st.push(cur);
             cur = cur->left;
+        } else {
+            cur = st.top();
+            st.pop();
+            cout << cur->val << " ";
+            cur = cur->right;
         }
-        cur = st.top();
-        st.pop();
-        cout << cur->val << " ";
-        cur = cur->right;
     }
     cout << endl;
 }
