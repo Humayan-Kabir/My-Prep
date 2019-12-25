@@ -15,7 +15,6 @@ int partition(int arr[], int left, int right) {
     return i;
 }
 void quickSort(int arr[], int left, int right) {
-    //   cout << left << " " << right << endl; 
       if(left >= right) return;
       int index = partition(arr, left, right);
       if (left < index - 1)
